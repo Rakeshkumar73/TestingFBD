@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>McGraw-Hill's FBD Tool - Seperate payload logic</title>
+
+<script type="text/javascript" src="seperate_payload_logic_FBD.js"></script>
+<script type="text/javascript" src="seperate_score_logic_FBD.js"></script>
+<script type="text/javascript" src="score.js"></script>
+<script language="javascript" type="text/javascript">
+
+
+</script>
+
+</head>
+
+<body>
+  <span style="font-size: 14pt; font-weight: bold;">
+    FBD Tool - Seperate score logic
+  </span><br>
+  
+  <br>&nbsp;<br>
+
+  <form name="testrig" onsubmit="return false;">
+
+    <table style="width: 100%;">
+
+
+    <tr>
+      <td valign="middle" rowspan=3>
+        <br><b>Input State:</b><br>
+        <a><textarea name="ext_012345678_1_state" id="state" rows="7" cols="40" spellcheck="false">0</textarea></a>
+        <br><button onclick="seperateStates();">Get Seperate States</button>
+      </td>
+	  <td>
+		<br><b>Question State:</b><br>
+        <a><textarea name="ext_012345678_1_state" id="qstate" rows="7" cols="40" spellcheck="false">0</textarea></a>
+		<br><button onclick="getQuestionState();">Get Question State</button>
+	  </td>
+	  <td rowspan=3>
+		<br><b>Merge State:</b><br>
+        <a><textarea name="ext_012345678_1_state" id="mstate" rows="7" cols="40" spellcheck="false">0</textarea></a>
+		<br><button onclick="mergeStates();">Merge States</button>
+	  </td>
+    </tr>
+	<td>
+		<br><b>Correct Ans State:</b><br>
+        <a><textarea name="ext_012345678_1_state" id="cstate" rows="7" cols="40" spellcheck="false">0</textarea></a>
+		<br><button onclick="getCorrectAnsState();">Get Correct Ans States</button>
+	</td>
+	<tr>
+	<td>
+		<br><b>Response State:</b><br>
+        <a><textarea name="ext_012345678_1_state" id="rstate" rows="7" cols="40" spellcheck="false">0</textarea></a>
+		<br><button onclick="getResponseState();">Get Response States</button>
+	</td>
+	</tr>
+
+    </table>
+    <!-- score:   <a><textarea name="ext_012345678_1_state" id="state" rows="7" cols="40" spellcheck="false">0</textarea></a>
+     <button onclick="getscore();">Get scoreValue</button> -->
+     
+    <!--  <button onclick="extTestGather();">Retrieve Output</button>
+    <i>Score:</i>:  <input type="text" name="ext_012345678_1_eval" id="score_id"> -->
+
+
+  </form>
+  </body>
+</html>
